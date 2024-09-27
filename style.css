@@ -62,14 +62,83 @@ main{
     flex-direction: column;
 }
 
-.hero{
+.principal{
     background: #181012;
+}
 
+.hero{
     max-width: 1120px; /*largura máxima*/
     height: 60vh; /*vh - view height -  é a altura da tela do navegador*/
 
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    align-items: center;
     gap: 6rem;
+
+    padding: 0rem 2rem;
+    margin: auto;
+
+    overflow: clip;
+}
+
+.hero-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.destaque{
+   font-family: Epilogue;
+   font-size: 1rem;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+.marrom{
+  color: #A45A49;  
+}
+
+h1{
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+hr{
+    border-color: #A45A49;
+}
+
+.hero-subtitulo{
+    color: #C7BAB3;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero-imagens-container{
+    max-width: 45%;  
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+}
+
+.hero-imagens-container > figure > img{ /*possibilta editar qualquer tag que esteja dentro de outra tag dentro de uma classe */
+
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.botao-container{
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate("0, -50");
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #A45A49;
 }
