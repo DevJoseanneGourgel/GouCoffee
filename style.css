@@ -48,6 +48,28 @@ nav{
 .menu{
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1.5rem; /*Gap: é uma propriedade utilizada para definir o espaçamento entre os elementos de um grid ou flexbox.*/
     color: #FFF2E780;
+}
+
+.github{
+   color: #FFF2E7;
+   font-weight: 600; 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    background: #181012;
+
+    max-width: 1120px; /*largura máxima*/
+    height: 60vh; /*vh - view height -  é a altura da tela do navegador*/
+
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 6rem;
 }
